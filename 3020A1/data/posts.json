@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Blog 1",
+    "date": "2025-08-01",
+    "content": "I added a toggle button that allows users to switch between light and dark themes. The theme preference is saved using localStorage, so it remains consistent across sessions. The toggle was placed in a fixed position on the page and styled to match the overall design of the site. I created a JSON file to store blog posts and used JavaScript’s fetch API to load and render them dynamically into the blog section. This keeps the blog easy to update without editing the HTML directly, and allows the layout to remain consistent."
+  },
+  {
+    "title": "Blog 2",
+    "date": "2025-08-02",
+    "content": "To make my portfolio more interactive and modern, I implemented a light/dark mode toggle using JavaScript. The toggle button stores the user’s theme preference in localStorage, ensuring consistency across sessions. I also created a blog section that loads posts from a JSON file using the fetch API. This keeps the site content flexible and easy to update without editing the HTML manually. These two features helped me better understand DOM manipulation and client-side dynamic rendering. "
+  }
+]
