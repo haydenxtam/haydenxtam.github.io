@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== font awesome ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-
+    Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="./index.html" class="nav__logo">Hayden<span>Tam</span></a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+          <li><a href="#home" class="nav__link active-link">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#resume" class="nav__link">Resume</a></li>
+          <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+          <li><a href="#blog" class="nav__link">Blog</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+          <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+
+        <div class="nav__socials">
+          <a href="https://github.com/haydenxtam" target="_blank" class="nav__social-link">
+          <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/haydenxtam/" target="_blank" class="nav__social-link">
+          <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/haydenxtam/" target="_blank" class="nav__social-link">
+          <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+
+        <button id="theme-switch">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+        </button>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <span class="home__subtitle">Welcome To My World</span>
+            <h1 class="home__title">
+              Hi, I'm Hayden Tam <span>IT Student.</span> at York University.
+            </h1>
+          </div>
+
+          <img src="assets/img/me.png" alt="" class="home__img" />
+        </div>
+      </section>
+
+      <!--=============== ABOUT ===============-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <img src="assets/img/mee.png" alt="" class="about__img" />
+
+          <div class="about__content">
+            <h2 class="section__title">About Me</h2>
+
+            <p class="about__description">
+              I am an Information Technology student at York University with a 
+              strong interest in cybersecurity, software development, and 
+              artificial intelligence. Through academic projects and 
+              independent learning, I’ve built a solid foundation in 
+              data structures, Java programming, and web development. My goal 
+              is to apply my technical skills and curiosity to solve real-world 
+              problems and contribute meaningfully in the field of IT.
+            </p>
+
+            <div class="tabs__btns">
+              <span class="tabs__btn tab__active" data-target="#skills">Main Skills</span>
+              <span class="tabs__btn" data-target="#experience">Experience</span>
+              <span class="tabs__btn" data-target="#education">Education & Certification</span>
+            </div>
+
+            <div class="tabs__content">
+              <div class="tabs__item tab__active" data-content id="skills">
+                <div class="tabs__data grid">
+                  <p class="tabs__description">
+                      <span>Languages</span> - Programming
+                      <span>Java, HTML5, JavaScript, CSS, MATLAB</span>
+                  </p>
+                  <p class="tabs__description">
+                      <span>Frameworks</span> - Development
+                      <span>JavaFX, Tailwing CSS, React.js, Spring Boot(learning)</span>
+                  </p>
+                  <p class="tabs__description">
+                      <span>Cloud Platforms</span> - Infrastucture
+                      <span>AWS(learning), Azure(learning)</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="tabs__item" data-content id="experience">
+                <div class="tabs__data grid">
+                  <p class="tabs__description">
+                      <span>Intern</span> - ???
+                      <span>20??</span>
+                  </p>
+                  <p class="tabs__description">
+                      <span>Inventory Specialist</span> - Costco Wholesale
+                      <span>2023 - Current</span>
+                  </p>
+                  <p class="tabs__description">
+                      <span>Swim Instructor</span> - Swim Apex Aquatic Club
+                      <span>2021 - 2022</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="tabs__item" data-content id="education">
+                <div class="tabs__data grid">
+                  <p class="tabs__description">
+                      <span>BA in Information Technology</span> - York University, Toronto, ON
+                      <span>2027</span>
+                  </p>
+                  <p class="tabs__description">
+                      <span>CompTIA Security+</span> - CompTIA
+                      <span>20??</span>
+                  </p>
+                  <p class="tabs__description">
+                      <span>Certificate 2</span> - ???
+                      <span>20??</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== resume ===============-->
+      <section class="resume section" id="resume">
+        <h2 class="section__title">My Resume</h2>
+        <p class="section__description">
+          Below is a downloadable version of my resume, outlining my academic 
+          background, technical skills, and hands-on project experience in 
+          Information Technology. It highlights my focus on cybersecurity, 
+          software development, and web technologies, as well as my commitment 
+          to continuous learning and problem-solving in modern IT environments.
+        </p>
+
+        <div class="resume__container container grid">
+          <div class="resume__item">
+            <div class="resume__btns">
+                <i class="fa-solid fa-file-arrow-down resume__icon"></i>
+                <a href="assets/img/Resume2025.pdf" class="resume__btn btn">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== PORTFOLIO ===============-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">My Latest Project</h2>
+        <p class="section__description">
+          Here are some of the projects I’ve worked 
+          on that demonstrate my skills in software development, memory management, 
+          and user-focused design. Each project reflects my interest in creating 
+          functional, efficient, and visually appealing solutions using various 
+          programming languages and tools.
+        </p>
+
+        <div class="portfolio__container container grid">
+          <div class="portfolio__item">
+              <img src="assets/img/pawfessionals.png" alt="" class="portfolio__img"/>
+              <div class="portfolio__data">
+                  <p class="portfolio__subtitle">Product Design</p>
+                  <h3 class="portfolio__title">Pawfessionals</h3>
+                  <p class="portfolio__description">A GUI-based application developed in MATLAB to
+                      manage pet grooming appointments. Features include scheduling, customer tracking, 
+                      and service logging.
+                  </p>
+              </div>
+          </div>
+          <div class="portfolio__item">
+              <img src="assets/img/port1.jpg" alt="" class="portfolio__img"/>
+              <div class="portfolio__data">
+                  <p class="portfolio__subtitle">Web Design</p>
+                  <h3 class="portfolio__title">Custom Portfolio</h3>
+                  <p class="portfolio__description">A responsive and minimalist personal portfolio 
+                      built using HTML and CSS. Showcases my technical projects, contact 
+                      information, and interest in IT and cybersecurity.
+                  </p>
+              </div>
+          </div>
+          <div class="portfolio__item">
+              <img src="assets/img/memory.png" alt="" class="portfolio__img"/>
+              <div class="portfolio__data">
+                  <p class="portfolio__subtitle">Development</p>
+                  <h3 class="portfolio__title">Memory Management System</h3>
+                  <p class="portfolio__description">Simulates basic memory allocation and 
+                      deallocation strategies (First Fit, Best Fit, Worst Fit) using 
+                      Java, with memory blocks, fragmentations, and system resource handling.
+                  </p>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== BLOG =================-->
+      <section class="blog section" id="blog">
+        <div class="blog-text">
+          <h2 class="section__title">Blog</h2>
+          <div id="blog-list"></div>
+        </div>
+      </section>
+
+      <!--=============== CONTACT ===============-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h2 class="section__title">Contact Me</h2>
+
+            <p class="contact__description">Connect with me via phone:
+              <a href="tel:+6474584002">647-458-4002</a> or email:
+              <a href="mailto:haydentam25@gmail.com">haydentam25@gmail.com</a>
+            </p>
+
+            <form class="contact__form" id="contact-form">
+              <div class="contact__form-input">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name *"
+                  class="contact__input"
+                  id="contact-name"
+                />
+              </div>
+
+              <div class="contact__form-input">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  class="contact__input"
+                  id="contact-email"
+                />
+              </div>
+
+              <div class="contact__form-input">
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Write a Subject"
+                  class="contact__input"
+                  id="contact-subject"
+                />
+              </div>
+
+              <div class="contact__form-input">
+                <textarea
+                  name="message"
+                  id="contact-message"
+                  class="contact__input textarea"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+
+              <input type="submit" value="Submit" class="btn" />
+
+              <p class="error__message" id="error-message"></p>
+            </form>
+          </div>
+
+          <img src="assets/img/mee.png" alt="" class="contact__img" />
+        </div>
+      </section>
+    </main>
+    <!--================FOOTER====================-->
+    <footer class="footer" id="footer"></footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-angle-up scrollup__icon"></i>
+    </a>
+
+    <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdeliver.net/npm/@emailjs.browser@3/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script type="module" src="assets/js/scripts.js"></script>
+  </body>
+</html>
